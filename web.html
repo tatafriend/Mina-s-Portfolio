@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="color-scheme: dark;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mina - Web</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="shortcut icon" href="./assets/public/favicon.svg"/>
+</head>
+<body>
+    <canvas class="fireworks"></canvas>
+    <div class="head">
+        <div class="main">
+            <a href="./index.html" class="logo2"><img src="./assets/public/logo_text2.svg"></a>
+            <div class="menu">
+                <li class="magical btn" onclick="window.location.href='./index.html'">Home</li>
+                <li class="magical btn nav" onclick="window.location.href='./Web.html'">Web design</li>
+                <li class="magical btn" onclick="window.location.href='./artwork.html'">Artwork</li>
+                <li class="magical btn" onclick="window.location.href='./about.html'">About</li>
+            </div>
+            <div class="menu" id="menu-expand">
+                <li class="magical btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
+            </div>
+            <div id="menu-panel">
+                <div class="menu-panel-content">
+                    <li class="magical btn" onclick="window.location.href='./index.html'">Home</li>
+                    <li class="magical btn nav" onclick="window.location.href='./web.html'">Web design</li>
+                    <li class="magical btn" onclick="window.location.href='./artwork.html'">Artwork</li>
+                    <li class="magical btn" onclick="window.location.href='./about.html'">About</li>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+        <div class="work">
+            <div class="card-list">
+                <div class="magical item">
+                    <a href="./web_page1.html" target="_blank">
+                        <div class="dark"><img class="cover" src="https://res.cloudinary.com/dsw8xnof0/image/upload/v1728390639/web-1_mddbqz.png"></div>
+                        <div class="text">
+                            <div class="title-area">
+                                <div class="title">
+                                    <div class="name">室內設計網站</div>
+                                    <div class="name link"> ↗</div>
+                                </div>
+                                <div class="tag tag-web">Web</div>
+                            </div>
+                            <div class="desc">Interior Design Website</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="magical item">
+                    <a href="./web_page2.html" target="_blank">
+                        <div class="dark"><img class="cover" src="https://res.cloudinary.com/dsw8xnof0/image/upload/v1728392883/web-2_oybcz5.png"></div>
+                        <div class="text">
+                            <div class="title-area">
+                                <div class="title">
+                                    <div class="name">物流企業網站</div>
+                                    <div class="name link"> ↗</div>
+                                </div>
+                                <div class="tag tag-web">3D交互網站</div>
+                            </div>
+                            <div class="desc">Logistics Company Website</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="magical item">
+                    <a href="./web_page3.html" target="_blank">
+                        <div class="dark"><img class="cover" src="https://res.cloudinary.com/dsw8xnof0/image/upload/v1726643357/web_3_eyfcji.png"></div>
+                        <div class="text">
+                            <div class="title-area">
+                                <div class="title">
+                                    <div class="name">服飾品牌網站</div>
+                                    <div class="name link"> ↗</div>
+                                </div>
+                                <div class="tag tag-assets">網站UIUX</div>
+                            </div>
+                            <div class="desc">Fashion Brand Website</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="magical item">
+                    <a href="./web_page4.html" target="_blank">
+                        <div class="dark"><img class="cover" src="https://res.cloudinary.com/dsw8xnof0/image/upload/v1726655969/art_4_vb7ick.jpg"></div>
+                        <div class="text">
+                            <div class="title-area">
+                                <div class="title">
+                                    <div class="name">娛樂城頁面設計</div>
+                                    <div class="name link"> ↗</div>
+                                </div>
+                                <div class="tag tag-2b">APP</div>
+                            </div>
+                            <div class="desc">App Game UI Design</div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="copyright">
+                <div>©Mina's Portfolio</div>
+               
+            </div>
+        </div>
+        <div class="widget">
+            <div class="shape-light"></div>
+            <div class="shape-star">
+                <div class="rising-stars rising-stars-visible">
+                    <div style="height:1px;width:1px"></div>
+                    <div style="height:2px;width:2px"></div>
+                    <div style="height:1px;width:1px"></div>
+                </div>
+            </div>
+            <div class="shape-earth"></div>
+        </div>
+</body>
+<script>
+    window.addEventListener("mousemove", function (e) {
+        document.querySelectorAll(".magical").forEach(element => {
+            const rect = element.getBoundingClientRect();
+            const offsetX = e.clientX - rect.left;
+            const offsetY = e.clientY - rect.top;
+            element.style.setProperty("--mouse-x", `${offsetX}px`);
+            element.style.setProperty("--mouse-y", `${offsetY}px`);
+        });
+    });
+</script>
+<script src="./js/main.min.js"></script>
+<script src='./js/anime.js'></script>
+<script src='./js/firework.js'></script>
+</html>

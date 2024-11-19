@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="color-scheme: dark;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mina-手繪逐格動畫</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="shortcut icon" href="./assets/public/favicon.svg"/>
+</head>
+<body>
+    <canvas class="fireworks"></canvas>
+    <div class="head">
+        <div class="main">
+            <a href="./index.html" class="logo2"><img src="./assets/public/logo_text2.svg"></a>
+            <div class="menu">
+                <li class="magical btn" onclick="window.location.href='./index.html'">Home</li>
+                <li class="magical btn" onclick="window.location.href='./web.html'">Web design</li>
+                <li class="magical btn nav" onclick="window.location.href='./artwork.html'">Artwork</li>
+                <li class="magical btn " onclick="window.location.href='./about.html'">About</li>
+            </div>
+            <div class="menu" id="menu-expand">
+                <li class="magical btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
+            </div>
+            <div id="menu-panel">
+                <div class="menu-panel-content">
+                    <li class="magical btn" onclick="window.location.href='./index.html'">Home</li>
+                    <li class="magical btn" onclick="window.location.href='./web.html'">Web design</li>
+                    <li class="magical btn nav" onclick="window.location.href='./artwork.html'">Artwork</li>
+                    <li class="magical btn " onclick="window.location.href='./about.html'">About</li>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="about">
+        <div class="about-top">
+            <div class="about-name">手繪逐格動畫</div>
+            <hr style="width: 100%; margin: 0; border: 0.7px solid #d2d2d2;">  
+            <div class="art-page-info">
+                <div class="about-info-left">
+                    <div class="about-info-title"><br>2019年4月 <span>|</span> 手繪動畫作品</div>
+                    <div class="introduce-desc">
+                        使用軟體:clip studio paint
+                        <br>動畫製作 :蔡名堯 蕭晨芸
+                        <br>
+                        <br>
+                        *大三時，替學校製作嘉賓演講時的前導動畫，
+                        奇美博物館副館長廖婉如 以「接下來的兩萬多個日子」為主題的演講，她以自己的人生經歷為起點，帶觀眾進入演講的主題。
+                        <br><br>
+                        「 設計理念 」
+                        <br>動畫開頭先以她從努力奔跑的樣子來表達奮力生活，渡過了學生時期，經歷大學聯考失利的挫折，
+                        因得到父親的支持而前往海外求學，從耶魯大學畢業後，她邂逅了摯愛，步入婚姻，並在不知不覺中成為兩個孩子的母親。
+                        <br><br>藉由這段動畫來鋪陳她在追逐夢想與經歷人生轉折中的堅持與成長，讓觀眾隨著她的演講故事，展望未來的更多日子。
+                        <br><br>
+
+                    </div>
+                    <div class="w-layout-grid img-grid">
+                        <div class="video-container">
+                            <video data-v-27edef16="" data-test="video-content" preload="auto" 
+                                   src="https://res.cloudinary.com/dsw8xnof0/video/upload/v1725387300/Graduation_Animation_0531_s8wduw.mp4" 
+                                   playsinline="true" loop="loop" draggable="false" autoplay="autoplay"></video>
+                        </div>
+                        
+                </div>
+                
+                <div class="tags">
+                    
+                    
+                    <span class="tag">#clip studio paint</span>
+                    <span class="tag">#photoshop</span>
+                    
+                    
+                </div>
+                <br><br><br>
+                
+            </div>
+            
+        </div>
+        <hr style="width: 100%; margin: 0; border: 0.7px solid #e2e2e2;">   
+    
+    <div class="footer">
+        <div class="copyright">
+            <div>© Mina's Portfolio</div>
+            
+        </div>
+    </div>
+    <div class="widget">
+        <div class="shape-light"></div>
+        <div class="shape-star">
+            <div class="rising-stars rising-stars-visible">
+                <div style="height:1px;width:1px"></div>
+                <div style="height:2px;width:2px"></div>
+                <div style="height:1px;width:1px"></div>
+            </div>
+        </div>
+        <div class="shape-earth"></div>
+    </div>
+</body>
+<script src="./js/main.min.js"></script>
+<script src='./js/anime.js'></script>
+<script src='./js/firework.js'></script>
+</html>
